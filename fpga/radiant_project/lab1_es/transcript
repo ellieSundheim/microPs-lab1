@@ -1,0 +1,137 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading project lab1_questa
+# Compile of lab1_es.sv was successful.
+vsim -gui work.lab1_es
+# vsim -gui work.lab1_es 
+# Start time: 21:21:47 on Sep 02,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: C:/Users/Ellie/Documents/E155/Lab_01_Sundheim/fpga/radiant_project/lab1_es/source/impl_1/lab1_es.sv(23): Module 'HSOSC' is not defined.
+#  For instance 'hf_osc' at path 'lab1_es'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 21:21:59 on Sep 02,2024, Elapsed time: 0:00:12
+# Errors: 1, Warnings: 5
+vsim -gui work.lab1_es -L HSOSC
+# vsim -gui work.lab1_es -L HSOSC 
+# Start time: 21:24:08 on Sep 02,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): (vopt-19) Failed to access library 'HSOSC' at "HSOSC".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'HSOSC' at "HSOSC".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'HSOSC' at "HSOSC".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: C:/Users/Ellie/Documents/E155/Lab_01_Sundheim/fpga/radiant_project/lab1_es/source/impl_1/lab1_es.sv(1): (vopt-2669) Unable to find library 'HSOSC'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'HSOSC' at "HSOSC".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'HSOSC' at "HSOSC".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'HSOSC' at "HSOSC".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: C:/Users/Ellie/Documents/E155/Lab_01_Sundheim/fpga/radiant_project/lab1_es/source/impl_1/lab1_es.sv(1): (vopt-2669) Unable to find library 'HSOSC'.
+# ** Error: C:/Users/Ellie/Documents/E155/Lab_01_Sundheim/fpga/radiant_project/lab1_es/source/impl_1/lab1_es.sv(23): Module 'HSOSC' is not defined.
+#  For instance 'hf_osc' at path 'lab1_es'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=7, Warnings=2.
+# Error loading design
+# End time: 21:24:14 on Sep 02,2024, Elapsed time: 0:00:06
+# Errors: 7, Warnings: 3
+# Load canceled
+vsim -gui -L iCE40UP work.lab1_es
+# vsim -gui -L iCE40UP work.lab1_es 
+# Start time: 21:27:43 on Sep 02,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.lab1_es(fast)
+# Loading iCE40UP.HSOSC(fast)
+add wave -position end  sim:/lab1_es/s
+add wave -position end  sim:/lab1_es/led
+add wave -position end  sim:/lab1_es/seg
+force s 0000
+run 100
+force s 0001
+run 100
+force s 0010
+run 100
+force 0001
+# ** UI-Msg (Error): (vish-4001) Incorrect number of arguments.
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force s 0001
+run 100
+force s 0011
+run 100
+# Compile of lab1_es.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.lab1_es(fast)
+# Loading iCE40UP.HSOSC(fast)
+force s 0000
+run 100
+force s 0001
+run 100
+force s 0010
+run 100
+force s 1111
+run 100
+force s 0100
+run 100
+force s 0001
+run 100
+force s 4'b0010
+run 100
+force s 4'b0000
+run 100
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.lab1_es(fast)
+# Loading iCE40UP.HSOSC(fast)
+force s 4'b0000
+run 100
+force s 4'b0001
+run 100
+force s 4'b0010
+run 100
+force s 4'b0011
+run 100
+force s 4'b0100
+run 100
+force s 4'b0101
+run 100
+force s 4'b0110
+run 100
+force s 4'b0111
+run 100
+force s 4'b1000
+run 100
+force s 4'b1001
+run 100
+force s 4'b1010
+run 100
+force s 4'b1011
+run 100
+force s 4'b1100
+run 100
+force s 4'b1110
+run 100
+force s 4'b1101
+run 100
+force s 4'b1111
+run 100
+# Compile of lab1_es.sv was successful.
