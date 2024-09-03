@@ -1,0 +1,1 @@
+C:/lscc/radiant/2024.1/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 393216 work.lab1_es(fast) -quiet -auto_acc_if_foreign -work work -L iCE40UP -allow_unnamed -o _opt -id 2-94e6f7a308d6-66d69281-3d6-b264 +__design_bin_path+C:/Users/Ellie/Documents/E155/Lab_01_Sundheim/fpga/radiant_project/lab1_es
